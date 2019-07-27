@@ -5109,7 +5109,6 @@
         <argument key="passwordEncoder" type="service" id="security.user_password_encoder.generic"/>
       </argument>
     </service>
-<<<<<<< HEAD
     <service id=".service_locator.fDbIXxi" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -5130,33 +5129,6 @@
         <argument key="App\Controller\SecuriteController:ajout" type="service" id=".service_locator.k22NER8"/>
         <argument key="App\Controller\SecuriteController:register" type="service" id=".service_locator.JBoVXlr"/>
         <argument key="App\Controller\SecuriteController:update" type="service" id=".service_locator.fDbIXxi"/>
-=======
-    <service id=".service_locator.jBD0lq." class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="serializer" type="service" id="serializer"/>
-        <argument key="usersRepository" type="service" id="App\Repository\UsersRepository"/>
-      </argument>
-    </service>
-    <service id=".service_locator.wLSO0UM" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="entityManager" type="service" id="doctrine.orm.default_entity_manager"/>
-        <argument key="serializer" type="service" id="serializer"/>
-        <argument key="users" type="service" id=".errored..service_locator.wLSO0UM.App\Entity\Users"/>
-        <argument key="validator" type="service" id="debug.validator"/>
-      </argument>
-    </service>
-    <service id=".service_locator.pkWpgsg" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="App\Controller\SecuriteController::liste" type="service" id=".service_locator.jBD0lq."/>
-        <argument key="App\Controller\SecuriteController::register" type="service" id=".service_locator.JBoVXlr"/>
-        <argument key="App\Controller\SecuriteController::update" type="service" id=".service_locator.wLSO0UM"/>
-        <argument key="App\Controller\SecuriteController:liste" type="service" id=".service_locator.jBD0lq."/>
-        <argument key="App\Controller\SecuriteController:register" type="service" id=".service_locator.JBoVXlr"/>
-        <argument key="App\Controller\SecuriteController:update" type="service" id=".service_locator.wLSO0UM"/>
->>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f
       </argument>
     </service>
     <service id=".service_locator.LtnrEkg" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
@@ -5416,20 +5388,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-<<<<<<< HEAD
       <argument type="service" id=".service_locator.Fjp7tCr"/>
-=======
-      <argument type="service" id=".service_locator.pkWpgsg"/>
->>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-<<<<<<< HEAD
       <argument type="service" id=".service_locator.Fjp7tCr"/>
-=======
-      <argument type="service" id=".service_locator.pkWpgsg"/>
->>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f
     </service>
     <service id="api_platform.swagger.normalizer.api_gateway.inner" class="ApiPlatform\Core\Swagger\Serializer\DocumentationNormalizer" public="false">
       <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
@@ -5466,11 +5430,7 @@
       <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
       <argument type="service" id="api_platform.path_segment_name_generator.underscore"/>
     </service>
-<<<<<<< HEAD
     <service id=".errored..service_locator.fDbIXxi.App\Entity\Partenaire" class="App\Entity\Partenaire"/>
-=======
-    <service id=".errored..service_locator.wLSO0UM.App\Entity\Users" class="App\Entity\Users"/>
->>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
       <argument type="service" id=".service_locator.A1Bx0QA"/>
       <argument type="collection">
@@ -5891,11 +5851,7 @@
     <service id="lexik_jwt_authentication.encoder" alias="lexik_jwt_authentication.encoder.lcobucci" public="true"/>
     <service id="Lexik\Bundle\JWTAuthenticationBundle\Encoder\JWTEncoderInterface" alias="lexik_jwt_authentication.encoder.lcobucci"/>
     <service id="lexik_jwt_authentication.key_loader" alias="lexik_jwt_authentication.key_loader.raw" public="true"/>
-<<<<<<< HEAD
     <service id="argument_resolver.controller_locator" alias=".service_locator.Fjp7tCr"/>
-=======
-    <service id="argument_resolver.controller_locator" alias=".service_locator.pkWpgsg"/>
->>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="api_platform.name_converter" alias="serializer.name_converter.metadata_aware"/>

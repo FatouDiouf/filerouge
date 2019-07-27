@@ -18,13 +18,8 @@ return [
     'securite' => [[], ['_controller' => 'App\\Controller\\SecuriteController::index'], [], [['text', '/api/securite']], [], []],
     'register' => [[], ['_controller' => 'App\\Controller\\SecuriteController::register'], [], [['text', '/api/register']], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\SecuriteController::login'], [], [['text', '/api/login']], [], []],
-<<<<<<< HEAD
     'add_partenaire' => [[], ['_controller' => 'App\\Controller\\SecuriteController::ajout'], [], [['text', '/api/partenaire']], [], []],
     'update_partenaire' => [['id'], ['_controller' => 'App\\Controller\\SecuriteController::update'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/partenaires']], [], []],
-=======
-    'liste' => [[], ['_controller' => 'App\\Controller\\SecuriteController::liste'], [], [['text', '/api/liste']], [], []],
-    'update_users' => [['id'], ['_controller' => 'App\\Controller\\SecuriteController::update'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/Users']], [], []],
->>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f
     'api_entrypoint' => [['index', '_format'], ['_controller' => 'api_platform.action.entrypoint', '_format' => '', '_api_respond' => 'true', 'index' => 'index'], ['index' => 'index'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', 'index', 'index', true], ['text', '/api']], [], []],
     'api_doc' => [['_format'], ['_controller' => 'api_platform.action.documentation', '_format' => '', '_api_respond' => 'true'], [], [['variable', '.', '[^/]++', '_format', true], ['text', '/api/docs']], [], []],
     'api_jsonld_context' => [['shortName', '_format'], ['_controller' => 'api_platform.jsonld.action.context', '_format' => 'jsonld', '_api_respond' => 'true'], ['shortName' => '.+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '.+', 'shortName', true], ['text', '/api/contexts']], [], []],
@@ -38,14 +33,10 @@ return [
     'api_partenaires_get_item' => [['id', '_format'], ['_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Partenaire', '_api_item_operation_name' => 'get'], [], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '[^/\\.]++', 'id', true], ['text', '/api/partenaires']], [], []],
     'api_partenaires_delete_item' => [['id', '_format'], ['_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Partenaire', '_api_item_operation_name' => 'delete'], [], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '[^/\\.]++', 'id', true], ['text', '/api/partenaires']], [], []],
     'api_partenaires_put_item' => [['id', '_format'], ['_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Partenaire', '_api_item_operation_name' => 'put'], [], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '[^/\\.]++', 'id', true], ['text', '/api/partenaires']], [], []],
-<<<<<<< HEAD
     'api_comptebancaires_get_collection' => [['_format'], ['_controller' => 'api_platform.action.get_collection', '_format' => null, '_api_resource_class' => 'App\\Entity\\Comptebancaire', '_api_collection_operation_name' => 'get'], [], [['variable', '.', '[^/]++', '_format', true], ['text', '/api/comptebancaires']], [], []],
     'api_comptebancaires_post_collection' => [['_format'], ['_controller' => 'api_platform.action.post_collection', '_format' => null, '_api_resource_class' => 'App\\Entity\\Comptebancaire', '_api_collection_operation_name' => 'post'], [], [['variable', '.', '[^/]++', '_format', true], ['text', '/api/comptebancaires']], [], []],
     'api_comptebancaires_get_item' => [['id', '_format'], ['_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Comptebancaire', '_api_item_operation_name' => 'get'], [], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '[^/\\.]++', 'id', true], ['text', '/api/comptebancaires']], [], []],
     'api_comptebancaires_delete_item' => [['id', '_format'], ['_controller' => 'api_platform.action.delete_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Comptebancaire', '_api_item_operation_name' => 'delete'], [], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '[^/\\.]++', 'id', true], ['text', '/api/comptebancaires']], [], []],
     'api_comptebancaires_put_item' => [['id', '_format'], ['_controller' => 'api_platform.action.put_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Comptebancaire', '_api_item_operation_name' => 'put'], [], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '[^/\\.]++', 'id', true], ['text', '/api/comptebancaires']], [], []],
-    'api_login_check' => [[], [], [], [['text', '/api/login']], [], []],
-=======
     'api_login_check' => [[], [], [], [['text', '/api/login_check']], [], []],
->>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f
 ];

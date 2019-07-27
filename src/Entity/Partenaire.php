@@ -36,20 +36,9 @@ class Partenaire
     private $adresse;
 
     /**
-<<<<<<< HEAD
      * @ORM\Column(type="string", length=255)
      */
     private $statut;
-=======
-     * @ORM\OneToMany(targetEntity="App\Entity\Users", mappedBy="partenaire")
-     */
-    private $users;
-
-    public function __construct()
-    {
-        $this->users = new ArrayCollection();
-    }
->>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f
 
     public function getId(): ?int
     {
@@ -92,7 +81,6 @@ class Partenaire
         return $this;
     }
 
-<<<<<<< HEAD
     public function getStatut(): ?string
     {
         return $this->statut;
@@ -101,41 +89,10 @@ class Partenaire
     public function setStatut(string $statut): self
     {
         $this->statut = $statut;
-=======
-    /**
-     * @return Collection|Users[]
-     */
-    public function getUsers(): Collection
-    {
-        return $this->users;
-    }
-
-    public function addUser(Users $user): self
-    {
-        if (!$this->users->contains($user)) {
-            $this->users[] = $user;
-            $user->setPartenaire($this);
-        }
->>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f
 
         return $this;
     }
 
-<<<<<<< HEAD
     
 
-=======
-    public function removeUser(Users $user): self
-    {
-        if ($this->users->contains($user)) {
-            $this->users->removeElement($user);
-            // set the owning side to null (unless already changed)
-            if ($user->getPartenaire() === $this) {
-                $user->setPartenaire(null);
-            }
-        }
-
-        return $this;
-    }
->>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f
 }
