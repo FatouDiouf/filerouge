@@ -51,6 +51,7 @@ a77c2b,127.0.0.1,GET,http://localhost:8000/api/login_check,1564167079,6adf18,200
 4b9289,127.0.0.1,GET,http://localhost:8000/api/Users/1,1564167319,700355,200
 700355,127.0.0.1,POST,http://localhost:8000/api/Users/1,1564167319,,405
 5b88cc,127.0.0.1,PUT,http://localhost:8000/api/Users/1,1564167333,,200
+<<<<<<< HEAD
 3bd232,127.0.0.1,PUT,http://localhost:8000/api/login_check,1564173467,,401
 e262fa,127.0.0.1,PUT,http://localhost:8000/api/login_check,1564173505,,200
 cdf574,127.0.0.1,PUT,http://localhost:8000/api/login_check,1564217999,,200
@@ -67,3 +68,5 @@ bef079,127.0.0.1,POST,http://localhost:8000/api/register,1564240160,,401
 d17f2a,127.0.0.1,POST,http://localhost:8000/api/login,1564240219,,200
 f7ac77,127.0.0.1,POST,http://localhost:8000/api/login,1564240256,,200
 c9dd8d,127.0.0.1,POST,http://localhost:8000/api/register,1564240315,,401
+=======
+>>>>>>> d03c8b806dd2f50939d11701c1a34fa7009bcb6f

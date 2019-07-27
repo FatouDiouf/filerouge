@@ -53,6 +53,12 @@ class Users implements UserInterface
      */
     private $email;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Partenaire", inversedBy="users")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $partenaire;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -170,6 +176,18 @@ class Users implements UserInterface
     public function setEmail(string $email): self
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    public function getPartenaire(): ?Partenaire
+    {
+        return $this->partenaire;
+    }
+
+    public function setPartenaire(?Partenaire $partenaire): self
+    {
+        $this->partenaire = $partenaire;
 
         return $this;
     }
